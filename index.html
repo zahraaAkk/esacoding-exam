@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-4"
+        style="background-color: rgb(8, 84, 132); padding: 20px; border-radius: 7px;  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <input id="itemInput" class="form-control form-control-lg me-2" type="text"
+                        placeholder="Fruits or Legumes" aria-label=".form-control-lg example">
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="radio" name="category" id="fruitsRadio" value="fruits">
+                        <label class="form-check-label" for="fruitsRadio">Fruits</label>
+                    </div>
+                    <div class="form-check me-2">
+                        <input class="form-check-input" type="radio" name="category" id="legumesRadio" value="legumes">
+                        <label class="form-check-label" for="legumesRadio">Legumes</label>
+                    </div>
+                    <button id="addSpecificButton" class="btn btn-primary ms-2" type="button">Add to specific
+                        List</button>
+                    <button id="addGeneralButton" class="btn btn-danger ms-2" type="button">Add to general List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4"
+        style="background-color:  rgb(8, 84, 132); padding: 20px; border-radius: 7px;box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);">
+        <div class="container "
+            style="background-color: rgb(8, 84, 132); padding: 20px; border-radius: 7px;box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex align-items-center">
+                        <button id="searchButton" class="btn btn-primary ms-2 btn-sm" type="button"
+                            style="white-space:nowrap;">Search for item</button>
+                        <button id="deleteButton" class="btn btn-danger ms-2 btn-sm" type="button"
+                            style="white-space:nowrap;">Delete item</button>
+                        <input id="searchInput" class="form-control form-control-lg me-3" type="text"
+                            placeholder="Search for item " aria-label=".form-control-lg example"
+                            style="margin-left:10px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="  border: 0;
+        height: 3px;
+        background-color: black;
+       ">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-between">
+                    <div class="text-center mb-3">
+                        <h5>List of Fruits</h5>
+                        <div class="card bg-success" id="fruits-card">
+                            <div class="card-body">
+                                <ul id="fruitsList" class="list-group list-group-flush fruit">
+                                    <li class="list-group-item">Fruits!-Apple</li>
+                                    <li class="list-group-item">Fruits!-Banana</li>
+                                    <li class="list-group-item">Fruits!-Orange</li>
+                                    <li class="list-group-item">Fruits!-Mango</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <h5>List of Fruits and Legumes</h5>
+                        <div class="card bg-success">
+                            <div class="card-body">
+                                <ul id="generalList" class="list-group list-group-flush ">
+                                    <li class="list-group-item">Fruits!-Apple</li>
+                                    <li class="list-group-item">Fruits!-Banana</li>
+                                    <li class="list-group-item">Legumes!-Carrot</li>
+                                    <li class="list-group-item">Legumes!-Tomato</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mb-3">
+                        <h5>List of Legumes</h5>
+                        <div class="card bg-success" id="legumes">
+                            <div class="card-body">
+                                <ul id="legumesList" class="list-group list-group-flush ">
+                                    <li class="list-group-item">Legumes!-Broccoli</li>
+                                    <li class="list-group-item">Legumes!-Beans</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(58, 163, 202);
+}
+
+h5 {
+    color: white !important
+}
+
+.form-check {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-check-label {
+    margin-left: 0.25rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.list-group-item {
+    margin-bottom: 10px;
+    width: 300px;
+    font-weight: bold;
+    border-bottom: none;
+    color: white;
+}
+
+.highlight {
+    background-color: rgb(255, 0, 0) !important;
+}
+
+#fruitsList .list-group-item {
+    background-color: rgb(140, 214, 140);
+
+}
+
+#generalList .list-group-item {
+    background-color: rgb(123, 218, 229);
+}
+
+#legumesList .list-group-item {
+
+    background-color: rgb(232, 232, 60);
+}
